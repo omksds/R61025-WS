@@ -27,11 +27,19 @@ function isBoardFull($board) {
     return !in_array(' ', $board);
 }
 
+function clearScreen() {
+    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+        system('cls');
+    } else {
+        system('clear');
+    }
+}
+
 $board = array_fill(0, 9, ' ');
 $currentPlayer = 'X';
 
 while (true) {
-    system('clear');
+    clearScreen();
     drawBoard($board);
     
     echo "プレイヤー {$currentPlayer} の番です。位置を選んでください (0-8): ";
@@ -46,14 +54,14 @@ while (true) {
     $board[$position] = $currentPlayer;
 
     if (checkWin($board)) {
-        system('clear');
+        clearScreen();
         drawBoard($board);
         echo "プレイヤー {$currentPlayer} の勝利です！\n";
         break;
     }
 
     if (isBoardFull($board)) {
-        system('clear');
+        clearScreen();
         drawBoard($board);
         echo "引き分けです！\n";
         break;
@@ -61,4 +69,3 @@ while (true) {
 
     $currentPlayer = ($currentPlayer === 'X') ? 'O' : 'X';
 }
-
