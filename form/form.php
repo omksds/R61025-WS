@@ -98,7 +98,7 @@ unset($_SESSION['old']);
     </div>
 
     <div class="footer">
-        © TIAM Inc.
+        © Exmple Inc.
     </div>
 </body>
 </html>
