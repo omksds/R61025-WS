@@ -17,92 +17,7 @@ unset($_SESSION['old']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT | お問い合わせ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .description {
-            text-align: center;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-        .form-group {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        .form-label {
-            width: 200px;
-            padding: 10px;
-            background-color: #fff;
-            color: #000;
-        }
-        .required {
-            color: #ff0000;
-            font-size: 0.8em;
-            margin-left: 5px;
-        }
-        .form-input {
-            flex-grow: 1;
-        }
-        .form-input input,
-        .form-input select,
-        .form-input textarea {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #fff;
-        }
-        textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        .submit-btn {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .submit-btn button {
-            background-color: #fff;
-            color: #000;
-            border: none;
-            padding: 15px 60px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        .submit-btn button:hover {
-            background-color: #e6e6e6;
-        }
-        .breadcrumb {
-            padding: 20px;
-            color: #fff;
-        }
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -187,4 +102,3 @@ unset($_SESSION['old']);
     </div>
 </body>
 </html>
-
